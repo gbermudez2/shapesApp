@@ -10,44 +10,108 @@ class SkillTree extends StatefulWidget {
 }
 
 class _SkillTreeState extends State<SkillTree> {
-  int _counter = 0;
-
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-      print("The counter has been increased to " + _counter.toString());
-    });
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.black38,
       appBar: AppBar(
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: Text(widget.title),
+        title: const Text('Skill Tree',
+        style: TextStyle(
+          fontSize: 30,
+          fontFamily: 'Inter',
+          fontWeight: FontWeight.bold
+        )),
       ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            const Text(
-                'Main Menu'
+            ElevatedButton(
+              onPressed: () {
+                // Handle Skill 1 button press
+              },
+              style: ElevatedButton.styleFrom(
+                shape: const CircleBorder(),
+                padding: const EdgeInsets.all(50),
+                backgroundColor: Colors.blue
+              ),
+              child: const Text(
+                'Running Man',
+                style: TextStyle(
+                  fontSize: 15,
+                  fontWeight: FontWeight.bold,
+                  fontFamily: 'Inter',
+                  color: Colors.white,
+                ),
+              ),
             ),
-            const Text(
-              'You have pushed the button this many times:',
+            const SizedBox(height: 20),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: <Widget>[
+                ElevatedButton(
+                  onPressed: () {
+                    // Handle Skill 2 button press
+                  },
+                  style: ElevatedButton.styleFrom(
+                    shape: const CircleBorder(),
+                    padding: const EdgeInsets.all(30),
+                    backgroundColor: Colors.redAccent
+                  ),
+                  child: const Text(
+                    'LOCKED',
+                    style: TextStyle(
+                      fontSize: 15,
+                      fontWeight: FontWeight.bold,
+                      fontFamily: 'Inter',
+                      color: Colors.white,
+                    ),
+                  ),
+                ),
+                ElevatedButton(
+                  onPressed: () {
+                    // Handle Skill 3 button press
+                  },
+                  style: ElevatedButton.styleFrom(
+                    shape: const CircleBorder(),
+                    padding: const EdgeInsets.all(30),
+                    backgroundColor: Colors.redAccent
+                  ),
+                  child: const Text(
+                    'LOCKED',
+                    style: TextStyle(
+                      fontSize: 15,
+                      fontWeight: FontWeight.bold,
+                      fontFamily: 'Inter',
+                      color: Colors.white,
+                    ),
+                  ),
+                ),
+              ],
             ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headlineLarge,
+            const SizedBox(height: 20),
+            ElevatedButton(
+              onPressed: () {
+                // Handle Skill 4 button press
+              },
+              style: ElevatedButton.styleFrom(
+                shape: const CircleBorder(),
+                padding: const EdgeInsets.all(50),
+                backgroundColor: Colors.redAccent
+              ),
+              child: const Text(
+                'LOCKED',
+                style: TextStyle(
+                  fontSize: 15,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white,
+                  backgroundColor: Colors.redAccent
+                ),
+              ),
             ),
           ],
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
 }
