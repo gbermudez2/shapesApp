@@ -1,30 +1,19 @@
 import 'package:flutter/material.dart';
 import 'main.dart';
 import 'skill_tree.dart';
-import 'practice_menu.dart';
 
-class MainMenu extends StatefulWidget {
-  const MainMenu({super.key, required this.title});
+class PracticeMenu extends StatefulWidget {
+  const PracticeMenu({super.key, required this.title});
 
   final String title;
 
 
   @override
-  State<MainMenu> createState() => _MainMenuState();
+  State<PracticeMenu> createState() => _PracticeMenuState();
 }
 
-class _MainMenuState extends State<MainMenu> {
+class _PracticeMenuState extends State<PracticeMenu> {
   void _toSkillTree() {
-    setState(() {
-      Navigator.push(
-        context,
-        MaterialPageRoute(builder: (context) =>
-        const SkillTree(title: 'Main Menu')),
-      );
-    });
-  }
-
-  void _toPracticeMenu() {
     setState(() {
       Navigator.push(
         context,
@@ -47,7 +36,7 @@ class _MainMenuState extends State<MainMenu> {
               child: Padding(
                 padding: EdgeInsets.only(left: 15, top: 80),
                 child: Text(
-                  'Home',
+                  'Practice',
                   style: TextStyle(
                     fontSize: 50,
                     fontWeight: FontWeight.bold,
@@ -59,7 +48,7 @@ class _MainMenuState extends State<MainMenu> {
             ),
             const SizedBox(height: 40), // Add some space between text and buttons
             ElevatedButton(
-              onPressed: _toSkillTree,
+                onPressed: () {},
               style: ElevatedButton.styleFrom(
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(10),
@@ -67,7 +56,7 @@ class _MainMenuState extends State<MainMenu> {
                 padding: const EdgeInsets.symmetric(horizontal: 90, vertical: 20),
               ),
               child: const Text(
-                'Skill Tree',
+                'Song 1',
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 25,
@@ -78,7 +67,7 @@ class _MainMenuState extends State<MainMenu> {
             ),
             const SizedBox(height: 20), // Add some space between buttons
             ElevatedButton(
-              onPressed: _toPracticeMenu,
+              onPressed: () {},
               style: ElevatedButton.styleFrom(
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(10),
@@ -86,7 +75,7 @@ class _MainMenuState extends State<MainMenu> {
                 padding: const EdgeInsets.symmetric(horizontal: 100, vertical: 20),
               ),
               child: const Text(
-                'Practice',
+                'Song 2',
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 25,

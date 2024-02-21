@@ -82,12 +82,14 @@ class _MyHomePageState extends State<MyHomePage> {
         style: ElevatedButton.styleFrom(
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(10),
-          )
+          ),
         ),
           child: const Padding(
             padding: EdgeInsets.symmetric(horizontal: 100, vertical: 20),
             child: Text('BEGIN',
-            style: TextStyle(fontWeight: FontWeight.bold,
+            style: TextStyle(
+                fontWeight: FontWeight.bold,
+                fontFamily: 'Inter',
                 fontSize: 20,
                 letterSpacing: 10,
                 color: Colors.black87),),

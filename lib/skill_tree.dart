@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'running_man.dart';
 
 class SkillTree extends StatefulWidget {
   const SkillTree({super.key, required this.title});
@@ -10,6 +11,15 @@ class SkillTree extends StatefulWidget {
 }
 
 class _SkillTreeState extends State<SkillTree> {
+  void _toRunningMan() {
+    setState(() {
+      Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) => const RunningMan(title: 'Main Menu')),
+      );
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -27,9 +37,7 @@ class _SkillTreeState extends State<SkillTree> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             ElevatedButton(
-              onPressed: () {
-                // Handle Skill 1 button press
-              },
+              onPressed: _toRunningMan,
               style: ElevatedButton.styleFrom(
                 shape: const CircleBorder(),
                 padding: const EdgeInsets.all(50),
