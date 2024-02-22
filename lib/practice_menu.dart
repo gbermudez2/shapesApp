@@ -53,7 +53,7 @@ class _PracticeMenuState extends State<PracticeMenu> {
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(10),
                 ),
-                padding: const EdgeInsets.symmetric(horizontal: 90, vertical: 20),
+                padding: const EdgeInsets.symmetric(horizontal: 100, vertical: 20),
               ),
               child: const Text(
                 'Song 1',
@@ -76,6 +76,63 @@ class _PracticeMenuState extends State<PracticeMenu> {
               ),
               child: const Text(
                 'Song 2',
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 25,
+                  letterSpacing: 5,
+                  color: Colors.black87,
+                ),
+              ),
+            ),
+            const SizedBox(height: 20), // Add some space between buttons
+            ElevatedButton(
+              onPressed: () {},
+              style: ElevatedButton.styleFrom(
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10),
+                ),
+                padding: const EdgeInsets.symmetric(horizontal: 100, vertical: 20),
+              ),
+              child: const Text(
+                'Song 3',
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 25,
+                  letterSpacing: 5,
+                  color: Colors.black87,
+                ),
+              ),
+            ),
+            const SizedBox(height: 20), // Add some space between buttons
+            ElevatedButton(
+              onPressed: () {},
+              style: ElevatedButton.styleFrom(
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10),
+                ),
+                padding: const EdgeInsets.symmetric(horizontal: 100, vertical: 20),
+              ),
+              child: const Text(
+                'Song 4',
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 25,
+                  letterSpacing: 5,
+                  color: Colors.black87,
+                ),
+              ),
+            ),
+            const SizedBox(height: 20), // Add some space between buttons
+            ElevatedButton(
+              onPressed: () {},
+              style: ElevatedButton.styleFrom(
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10),
+                ),
+                padding: const EdgeInsets.symmetric(horizontal: 100, vertical: 20),
+              ),
+              child: const Text(
+                'Song 5',
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 25,

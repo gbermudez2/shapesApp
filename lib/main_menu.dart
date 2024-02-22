@@ -45,7 +45,7 @@ class _MainMenuState extends State<MainMenu> {
             const Align(
               alignment: Alignment.topLeft,
               child: Padding(
-                padding: EdgeInsets.only(left: 15, top: 80),
+                padding: EdgeInsets.only(left: 15, top: 200),
                 child: Text(
                   'Home',
                   style: TextStyle(
