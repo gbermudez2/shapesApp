@@ -19,7 +19,7 @@ class _MainMenuState extends State<MainMenu> {
       Navigator.push(
         context,
         MaterialPageRoute(builder: (context) =>
-        const SkillTree(title: 'Main Menu')),
+        const SkillTree(title: 'Skill Tree')),
       );
     });
   }

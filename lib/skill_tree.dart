@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'running_man.dart';
+import 'Running Man/running_man.dart';
 
 class SkillTree extends StatefulWidget {
   const SkillTree({super.key, required this.title});
@@ -96,26 +96,6 @@ class _SkillTreeState extends State<SkillTree> {
                   ),
                 ),
               ],
-            ),
-            const SizedBox(height: 20),
-            ElevatedButton(
-              onPressed: () {
-                // Handle Skill 4 button press
-              },
-              style: ElevatedButton.styleFrom(
-                shape: const CircleBorder(),
-                padding: const EdgeInsets.all(50),
-                backgroundColor: Colors.redAccent
-              ),
-              child: const Text(
-                'LOCKED',
-                style: TextStyle(
-                  fontSize: 15,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.white,
-                  backgroundColor: Colors.redAccent
-                ),
-              ),
             ),
           ],
         ),
